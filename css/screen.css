@@ -1,0 +1,175 @@
+/* main body */
+
+body {
+    background: white;
+    color: black;
+    font-size: 87.5%;           /* Base font size is 14px */
+    font-family: Verdana, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+}
+
+/* link decoration */
+a {
+    text-decoration: none;
+}
+
+/* visited links */
+a:link, a:visited {
+    color: #283442;
+}
+
+/* active links */
+a:link, a.active {
+    color: #283442;
+}
+
+/* Navigation bar */
+
+.mainheader nav {
+    height:40px;
+    background: #283442;
+}
+ 
+.mainheader nav ul {
+    list-style: none;
+    font-size: 14px;
+    margin: 0 auto;
+
+}
+
+.mainheader nav ul li {
+    display: inline;
+    float: left;
+}
+ 
+.mainheader nav a:link,  .mainheader nav a:visited {
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    padding: 10px 25px;  
+    text-align: center;
+}
+
+.mainheader nav a:hover, .mainheader nav a:active, 
+.mainheader nav .active a:link, .mainheader nav .active a:visited
+{
+    background: #3A464F; 
+    height: 20px;
+
+}
+
+/* content */
+.mainContent {
+    line-height: 25px;
+}
+
+.content {
+    width: 70%;
+    float: left;
+
+}
+
+/* Right Side bar */
+aside {
+    width:20%;
+    float:right;
+    border-left:1px solid #aaa;
+    padding-left:15px;
+}
+
+aside .widget {
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+aside .widget .inner {
+    display: block;   
+}
+
+aside ul {
+    padding:0;
+    margin:0 0 20px 0;
+    list-style:none;
+}
+
+aside ul li {
+    padding:5px 0;
+}
+
+aside ul li input[type="text"], ul li input[type="password"] {
+    width:200px;
+}
+
+/* forms css */
+form ul {
+    margin:0 0 20px 0;
+    list-style:none;
+}
+
+form ul li {
+    padding:5px 0;
+}
+
+form ul li input[type="text"], ul li input[type="password"] {
+    width:200px;
+}
+
+/* main footer */
+
+.mainFooter {
+    width: 100%;
+    float: left;
+    background-color: #283442;
+    color: white;
+}
+
+.mainFooter p {
+    width: 92%;
+    margin: 1% auto;
+}
+
+.widget {
+    margin-bottom:20px;
+}
+
+.widget h2 {
+    margin:0 0 10px 0;
+    padding:0 5px;
+    font-weight:normal;
+    border-bottom:1px solid #ddd;
+}
+
+.widget .inner {
+    margin:0 10px;
+}
+
+/* the post display */
+.book_display {
+  margin: 20px;
+}
+
+.book_display p {
+  margin: 0px;
+}
+ 
+.book_display ul {
+  list-style-type: none;
+  width: 100%;
+}
+
+.book_display li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+ 
+.book_display li {
+  padding: 10px;
+  overflow: auto;
+}
+ 
+.book_display li:hover {
+  background: #eee;
+  cursor: pointer;
+}
