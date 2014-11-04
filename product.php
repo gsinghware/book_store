@@ -3,7 +3,7 @@
 		<?php
 			$result = mysql_query("SELECT * FROM `products` WHERE 1");
 
-			while ( $row = mysql_fetch_array($result) ) { ?>
+			while ( $row = mysql_fetch_array($result)) { ?>
 				<li>
 					<?php echo "<img src=$row[image]" ?>
 					<h3><b>Title:</b>	 	<?php echo $row['title']; ?></a></h3><br>

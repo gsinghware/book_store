@@ -1,5 +1,12 @@
 <?php 
 
+function is_admin($user_id) 
+{
+	$user_id = (int)$user_id;
+	$query = "SELECT COUNT(`user_id`) FROM `users` WHERE `user_id` = $user_id AND 'type' = 1";
+	return (mysql_result(mysql_query($query), 0) == 1) ? true : false;
+}
+
 function update_user($update_data)
 {
 	global $session_user_id;

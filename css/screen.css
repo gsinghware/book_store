@@ -148,6 +148,7 @@ form ul li input[type="text"], ul li input[type="password"] {
 /* the post display */
 .book_display {
   margin: 20px;
+  line-height: 25px;
 }
 
 .book_display p {
@@ -172,4 +173,24 @@ form ul li input[type="text"], ul li input[type="password"] {
 .book_display li:hover {
   background: #eee;
   cursor: pointer;
+}
+
+.search_box {
+    width: 100%;
+    text-align: center;
+}
+
+.search_box input[type="text"] {
+    width: 50%;
+    padding:8px 15px;
+    border:1px solid #dbdbdb;
+}
+
+.search_box input[type="submit"] {
+    position:relative;
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #283442;
+    background-color:#283442;
+    color:#fafafa;
 }

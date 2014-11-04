@@ -1,5 +1,15 @@
 <?php 
 
+function admin_protect() 
+{
+	global $user_data;
+	if(is_admin($user_data['user_id']) === false)
+	{
+		header('Location: index.php');
+		exit();
+	}
+}
+
 function logged_in_redirect()
 {
 	if(logged_in() === true)
