@@ -102,6 +102,10 @@ aside ul li input[type="text"], ul li input[type="password"] {
     width:200px;
 }
 
+form {
+    display: block;
+}
+
 /* forms css */
 form ul {
     margin:0 0 20px 0;
@@ -194,3 +198,35 @@ form ul li input[type="text"], ul li input[type="password"] {
     background-color:#283442;
     color:#fafafa;
 }
+
+header {
+    margin-bottom: 20px;
+}
+
+.post_content {
+    width: 70 %;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.comment-block {
+    margin: 20px 0 20px 20px;
+}
+
+.comment-item {
+    overflow: hidden;
+    width: 500px;
+    clear: both;
+    padding: 10px;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.comment-post {
+    width: 400px;
+    float: left;
+    padding: 0 5px 0 10px;
+}
+
+

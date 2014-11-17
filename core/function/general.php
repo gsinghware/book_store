@@ -1,5 +1,22 @@
 <?php 
 
+function register_bid($session_user_id, $prod_id, $register_bid)
+{
+	$user_id = (int)$session_user_id;
+	mysql_query("UPDATE `products` SET `current_bid` = '$register_bid' WHERE `prod_id` = $prod_id");
+	mysql_query("UPDATE `products` SET `cur_highest_bidder` = '$user_id' WHERE `prod_id` = $prod_id");
+}
+
+function register_comment($register_comment)
+{
+	array_walk($register_comment, 'array_sanitize');
+
+	$fields = '`' . implode('`, `', array_keys($register_comment)). '`';
+	$data = '\'' . implode('\', \'', $register_comment) . '\'';
+
+	$query = mysql_query("INSERT INTO comment ($fields) VALUES ($data)");
+}
+
 function admin_protect() 
 {
 	global $user_data;

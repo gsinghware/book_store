@@ -32,13 +32,25 @@ include 'includes/aside.php';
 							<h3><b>Title:</b>	 	<?php echo $row['title']; ?></a></h3><br>
 							<p><b>Buy Now:</b> 		$<?php echo $row['price']; ?></p>
 							<p><b>Current Bid:</b> 	$<?php echo $row['current_bid']; ?></p><br>
-							<p><b><u>View Product Details</u></b></p>
+							
+
+							<?php
+								$id = $row['prod_id'];
+								$link = 'prod_details.php?prod_id=' . $id;
+								echo "<b><a href='$link' ><u>View Product Details</u></a></b>";
+							?>
 						</li>
 						<?php
 					}    
 		        }
 		        else { 	// if there is no matching rows do following
-		            echo "No results";
+		            echo "Your search - " . $query . " - did not match any book in our DB.
+
+					<br>\n<br>\n<b>Suggestions</b>:
+
+					<br>\nMake sure all words are spelled correctly.<br>\n
+					Try different keywords.<br>\n
+					Try more general keywords.";
 		        }
 		    }
 		    else { 		// if query length is less than minimum

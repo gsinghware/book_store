@@ -55,7 +55,6 @@ if(empty($_POST) === false)
 			echo output_errors($errors);
 		}
 ?>
-
 		<form action="" method="POST">
 			<ul>
 				<li>

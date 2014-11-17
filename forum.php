@@ -8,4 +8,3 @@ include 'includes/aside.php';
 	<p>Just a template.</p>
 
 <?php include 'includes/overall/footer.php'; ?>
-

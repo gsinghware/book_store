@@ -1,0 +1,47 @@
+Register_user($registration_form)
+	if $registration_form is completely filled
+		if $username already exists 
+			print "error username already exists" 
+			return
+
+		if $email already exists
+			print "email already exist for this user"
+			return
+
+		go to the users table in database and insert the user data
+		return
+
+	else if $registration_form is missing the required fields
+		print "All field marked with an astrisk are required."
+		return
+
+
+Search($book)
+	query the product table to see if anything looks like $book
+	if query returns >= 1 
+		get the prod_id of the all products
+	
+	iterate prod_id's and display all the products in a new page.
+
+Login($user_id, $password)
+	verify if either of the fields are empty
+	if not empty
+		check if the user exists in DB if not return	
+		check if user account has been activated in DB (active field) if not return	
+		check the database to see if both the $user_id and $password match
+		if they match
+			login
+
+
+
+Once the item is expired
+{
+	remove the item from the list of items in home page
+	change the status of the Item to be Expired on top of Item Page
+	Remove the bidding box
+	Show the winner
+	subtract money from the users account
+	return money back to all the users that bid on that item (How to do that??????)
+		IDEA: when some bids higher than the previous bidder return back the previous higgest bid to the user
+}
+
